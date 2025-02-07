@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';  // 👈 On utilise HashRouter au lieu de BrowserRouter
 import App from './App';
 import './index.css';
 
@@ -9,8 +9,8 @@ if (!rootElement) throw new Error('❌ Root element not found in index.html');
 
 createRoot(rootElement).render(
   <StrictMode>
-    <BrowserRouter basename="/aestora">  {/* ← Ajout du basename pour GitHub Pages */}
+    <HashRouter>  {/* 👈 Fix pour que toutes les pages fonctionnent sur GitHub Pages */}
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
