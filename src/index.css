@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+/* Flodesk Form Styles */
+[data-ff-el="root"].ff-679762dbb32b1d435468220c *,
+[data-ff-el="root"].ff-679762dbb32b1d435468220c *::before,
+[data-ff-el="root"].ff-679762dbb32b1d435468220c *::after {
+  box-sizing: border-box;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c [tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c h1,
+[data-ff-el="root"].ff-679762dbb32b1d435468220c h2,
+[data-ff-el="root"].ff-679762dbb32b1d435468220c h3,
+[data-ff-el="root"].ff-679762dbb32b1d435468220c h4,
+[data-ff-el="root"].ff-679762dbb32b1d435468220c h5,
+[data-ff-el="root"].ff-679762dbb32b1d435468220c h6 {
+  margin-top: 0;
+  margin-bottom: 0.7em;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .fd-form-control {
+  width: 100%;
+  display: block;
+  outline: none;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .fd-form-control:focus {
+  outline: none;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .fd-form-label {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #ffffff;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .fd-form-group {
+  margin: 0 0 15px;
+  position: relative;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__container {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 620px;
+  background: transparent;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__form {
+  color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+  text-transform: none;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__title {
+  color: #ffffff;
+  width: 100%;
+  margin: 0 0 15px 0;
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__subtitle {
+  width: 100%;
+  margin: 0 0 20px 0;
+  display: block;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__control {
+  color: #ffffff;
+  border: 1px solid #444444;
+  height: 46px;
+  padding: 12px 20px;
+  font-size: 14px;
+  background: #2a2a2a;
+  text-align: left;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 8px;
+  letter-spacing: 0.1px;
+  transition: all 0.2s ease;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__control:focus {
+  border-color: #c70039;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__button {
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 14px;
+  background: #c70039;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 8px;
+  letter-spacing: 0.1px;
+  transition: all 0.2s ease;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__button:hover {
+  background: #a30030;
+  cursor: pointer;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__success {
+  display: none;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c[data-ff-stage="success"] .ff-679762dbb32b1d435468220c__success {
+  display: block;
+}
+
+[data-ff-el="root"].ff-679762dbb32b1d435468220c .ff-679762dbb32b1d435468220c__success-message {
+  color: #ffffff;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.6;
+}
